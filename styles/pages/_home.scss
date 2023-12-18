@@ -1,6 +1,6 @@
 .threeboxes{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     gap: 15px;
     margin: 50px auto;
     .black_box{
@@ -115,9 +115,34 @@
     }
 }
 
-@media screen and (min-width:1319px){
+@media screen and (min-width:1280px){
+    .tel{
+        display: flex;
+        margin-right: 5%;
+        background-color: $maincolor;
+        
+    }
+}
+
+@media screen and (min-width:1100px){
+    .home{
+        display: flex;
+        a{
+            color:#000;
+            text-transform: uppercase;
+            margin-right: 50px;
+            font-weight: bold;
+
+
+        }
+    }
+    .burger_menu{
+        display: none;
+    }
     .threeboxes{
         margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         position: absolute;
         bottom: 20px;
         left: 50%;

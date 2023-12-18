@@ -11,17 +11,21 @@
     padding: 20px 0;
     display: flex;
     align-items: center;
-    .home, .tel{
-        display: none;
-    }
+}
+.home, .tel{
+    display: none;
 }
 .logo{
     display: flex;
     align-items: center;
     margin-right: auto;
-
+    margin-left: 5%;
+    img{
+        margin-right: 10px;
+    }
 }
 .burger_menu{
+    margin-right: 5%;
     div{
         width: 30px;
         height: 3px;
