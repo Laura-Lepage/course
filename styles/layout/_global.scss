@@ -1,0 +1,23 @@
+.wrapper{
+    width:90%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    width: 75px;
+    height: 5px;
+    background-color: $maincolor;
+    border: none;
+}
+.center{
+    text-align: center;
+}
+img{
+    max-width: 100%;
+}
+.icon_small{
+    width: 75px;
+}

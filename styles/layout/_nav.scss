@@ -1,0 +1,46 @@
+.course{
+    background-color: #fff;
+    width: 85%;
+    max-width:1300px;
+    margin: 0 auto;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    translate: -50% 0 0;
+    z-index: 1;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    .home, .tel{
+        display: none;
+    }
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+}
+.burger_menu{
+    div{
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+h1{
+    margin: 0;
+    @include absmiddle;
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    span{
+        background-color: $maincolor;
+    }
+
+}
+h3{
+    margin: 0;
+}
