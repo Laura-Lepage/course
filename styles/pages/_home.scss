@@ -32,24 +32,94 @@
         }
     }
 }
-.popular_box{
+.courses_box{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 15px;
+    margin-bottom: 175px;
     img{
         width: 100%;
+        display: block;
+    }
+    .light_grey_back{
+        background-color: rgb(247, 242, 242);
+        padding: 70px 0;
+        position: relative;
+        .inside_grey_back{
+            @include absmiddle;
+        }
+    }
+    .author_prize{
+        display: flex;
+        .grey_back{
+            background-color: rgb(194, 192, 192);
+            padding: 15px;
+            margin-right: auto;
+            width: 85%;
+            .content{
+                display: flex;
+                align-items: center;
+                img{
+                    border-radius: 50%;
+                    width: 75px;
+                    margin-right: 15px;
+                }
+                div:nth-of-type(1){
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-right: 5px;
+                }
+                div:nth-of-type(2){
+                    font-size: 18px;
+                    color: rgb(249, 246, 246);
+                }
+            }
+        }
+        .yellow_back{
+            background-color: #ffbf00;
+            width: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+            
+        }
     }
 }
 
 .register{
-    margin-top: 75px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     .yellow_box{
         background-color: $maincolor;
         height: 767px;
-        padding: 200px 100px;
+        position: relative;
         text-align: center;
+        color:#fff;
+        .content{
+            @include absmiddle;
+            width: 55%;
+            h3{
+                margin: 0;
+                span{
+                    color:#000;
+                }
+            }   
+            p{
+                line-height: 2.5;
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+            a{
+                color: inherit;
+                text-transform: uppercase;
+                border: 1px solid #000;
+                padding: 10px 20px;
+                background-color: #000;
+            }
+
+        }
     }
     .search{
         background: url(../../images/search_background.jpg) center/cover;
@@ -65,22 +135,69 @@
             left: 0;  
         }
         .search_content{
-            position: relative;
+            @include absmiddle;
             z-index: 1;
+            width: 60%;
+            form{
+                display: flex;
+                flex-direction: column;
+                input{
+                    margin-bottom: 20px;
+                    padding: 15px 20px;
+                }
+                input:nth-of-type(4){
+                    background-color: $maincolor;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+            }
         }
     }
 
 }
-.ourservices_box{
+.ourservices_boxes{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-
+    .box{
+        img{
+            width: 60px;
+            margin-bottom: 30px;
+        }
+        p{
+            line-height: 2;
+            color: grey;
+            margin-bottom: 60px;
+            font-size: 18px;
+        }
+    }
 }
+
 .whatourstudent{
     background: url(../../images/testimonials_background_2.jpg) center/cover;
-    height: 750px;
-    
-    
+    height: 838px;
+    position: relative;
+    color: #fff;
+    .content{
+        @include absmiddle;
+        div:nth-of-type(1){
+            color:$maincolor;
+            font-size: 40px;
+        }
+        p{
+            line-height: 2;
+            font-size: 18px;
+        }
+        img{
+            border-radius: 50%;
+            width: 125px;
+            margin-bottom: 20px;
+        }
+        div:nth-of-type(2){
+            text-transform: uppercase;
+            color: $maincolor;
+            margin-bottom: 15px;
+        }
+    }
 }
 .date{
     display: flex;
@@ -90,13 +207,39 @@
     padding: 25px;
     width: 150px;
     text-align: center;
+    margin: 25px 0;
     span:nth-child(1){
         font-size: 50px;
+        font-weight: bold;
+    }
+    span:nth-child(2){
+        font-size: 22px;
     }
 }
 .upcomingevents_content{
     img{
         width: 100%;
+    }
+}
+
+iframe{
+    width: 100%;
+    
+}
+.main_box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    .getintouch{
+        grid-column: span 2;
+    
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .joincourses{
+        
+        
     }
 }
 
