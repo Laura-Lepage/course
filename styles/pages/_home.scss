@@ -35,7 +35,7 @@
 .courses_box{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 15px;
+    gap: 30px;
     margin-bottom: 175px;
     img{
         width: 100%;
@@ -118,7 +118,6 @@
                 padding: 10px 20px;
                 background-color: #000;
             }
-
         }
     }
     .search{
@@ -137,13 +136,15 @@
         .search_content{
             @include absmiddle;
             z-index: 1;
-            width: 60%;
+            width: 75%;
             form{
                 display: flex;
                 flex-direction: column;
                 input{
-                    margin-bottom: 20px;
+                    margin-bottom: 25px;
                     padding: 15px 20px;
+                    border:none;
+                    font-size: 18px;
                 }
                 input:nth-of-type(4){
                     background-color: $maincolor;
@@ -158,6 +159,7 @@
 .ourservices_boxes{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 25px;
     .box{
         img{
             width: 60px;
@@ -208,6 +210,7 @@
     width: 150px;
     text-align: center;
     margin: 25px 0;
+    margin-right: 20px;
     span:nth-child(1){
         font-size: 50px;
         font-weight: bold;
@@ -219,7 +222,16 @@
 .upcomingevents_content{
     img{
         width: 100%;
+        margin-bottom: 20px;
     }
+    .next_date{
+        padding: 0 25px;
+    }
+}
+.subscribe_down{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
 }
 
 iframe{
@@ -229,15 +241,38 @@ iframe{
 .main_box{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
     .getintouch{
         grid-column: span 2;
-    
+        
         form{
             display: flex;
             flex-direction: column;
+            input, textarea{
+                margin-bottom: 20px;
+                background-color: rgb(243, 236, 236);
+                padding: 15px 20px;
+                border: none;
+            }
+            input:nth-of-type(3){
+                background-color: $maincolor;
+                color: #fff;
+                text-transform: uppercase;
+            }  
         }
     }
     .joincourses{
+        p{
+            color: grey;
+            line-height: 2;
+        }
+        .join_coord{
+            position: relative;
+            .content{
+                @include absmiddle;
+            }
+
+        }
         
         
     }
